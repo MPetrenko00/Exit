@@ -63,6 +63,10 @@ label {
 	cursor: pointer;
 }
 
+html{
+	font-size: 12px;
+}
+
 /*--------------------------------------*/
 
 
@@ -71,7 +75,7 @@ label {
 body {
 	font-family: 'Roboto';
 	font-weight: 400;
-	font-size: 20px;
+	font-size: 1rem;
 }
 .wrapper {
 	height: 100vh;
@@ -88,6 +92,8 @@ body {
 	right: 0;
 	bottom: 0;
 	background: rgba(0, 0, 0, .6);
+	backdrop-filter: blur(5px);
+	overflow: auto;
 }
 
 .container {
@@ -97,6 +103,8 @@ body {
 	position: relative;
 	backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(5px);
+	background: rgba(233, 233, 233, 0.25);
+	overflow: auto;
 }
 
 .box{
@@ -173,6 +181,7 @@ body {
 
 .input-res{
 	width: 100%;
+	color: #fff;
     background: #929191;
     border: none;
     outline: none;
@@ -253,7 +262,7 @@ button{
     background: #153416;
     color: #fff;
     border-radius: 30px;
-    padding: 15px ;
+    padding: 16px ;
 	width: 100%;
 	margin-bottom: 40px;
 }
@@ -267,7 +276,7 @@ button{
 .text-2{
 	display: flex;
 	justify-content: center;
-
+    gap: 15px;
 }
 /*--------------------------------------*/
 
@@ -286,6 +295,7 @@ button{
 /*--------------------------------------*/
 
 .text-3{
+	color: #153416;
 	display: flex;
 	justify-content: center;
 	margin-bottom: 20px;
@@ -298,6 +308,7 @@ button{
 
 .icon-down > ul{
  display: inline-flex;
+ gap: 20px;
 }
 
 .block{
@@ -320,12 +331,14 @@ button{
 	padding: 0.5rem;
 }
 
+.block li a{
+	display: inline-block;
+}
 
 .icon {
 	width: 24px;
 	height: 24px;
 	fill: #153416;
-    margin: 5px;
 }
 
 .icon:hover {
